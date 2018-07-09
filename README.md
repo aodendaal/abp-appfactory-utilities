@@ -1,2 +1,2 @@
 # abp-appfactory-utilities
-Utilities and common functions for using ASP.NET Boilerplate AppFactory modules
+Utilities and common functions used by ASP.NET Boilerplate AppFactory modules
