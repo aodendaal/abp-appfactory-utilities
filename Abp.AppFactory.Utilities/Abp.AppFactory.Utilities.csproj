@@ -8,7 +8,9 @@
     <Authors>Andre Odendaal</Authors>
     <Company>AppFactory</Company>
     <Description>Utilities and common functions used by ASP.NET Boilerplate AppFactory modules</Description>
-    <Version>1.1.0</Version>
+    <Version>1.2.0</Version>
+    <Copyright>Andre Odendaal</Copyright>
+    <PackageReleaseNotes>Added overload to combine multiple paths and updated function to strip leading path separator from second path</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>

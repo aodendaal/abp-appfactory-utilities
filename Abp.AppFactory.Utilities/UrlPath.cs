@@ -28,13 +28,39 @@ namespace Abp.AppFactory.Utilities
                 return path1;
             }
 
-            var p1end = path1[path1.Length - 1];
-            if (p1end != pathSeparator)
+            if (path2[0] == pathSeparator)
+            {
+                path2 = path2.Substring(1, path2.Length - 1);
+            }
+
+            if (path1[path1.Length - 1] != pathSeparator)
             {
                 return path1 + pathSeparator + path2;
             }
 
             return path1 + path2;
+        }
+
+        public static string Combine(string path, params string[] paths)
+        {
+            if (path == null)
+            {
+                throw new ArgumentNullException("path");
+            }
+
+            if (paths == null)
+            {
+                throw new ArgumentNullException("paths");
+            }
+
+            var result = path;
+
+            foreach (var p in paths)
+            {
+                result = Combine(result, p);
+            }
+
+            return result;
         }
     }
 }
