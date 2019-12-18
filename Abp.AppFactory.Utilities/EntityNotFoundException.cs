@@ -2,7 +2,7 @@
 
 namespace Abp.AppFactory.Utilities
 {
-    [Obsolete("ASPNETBoilerplate now implements a similar exception", true)]
+    [Obsolete("ASPNETBoilerplate implements a similar exception with the same name", false)]
     public class EntityNotFoundException : Exception
     {
         private string field;
