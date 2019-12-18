@@ -1,9 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Abp.AppFactory.Utilities
 {
+    [Obsolete("ASPNETBoilerplate now implements a similar exception", true)]
     public class EntityNotFoundException : Exception
     {
         private string field;
